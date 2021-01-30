@@ -215,6 +215,22 @@ img {
 .hero {
   background-color: var(--header-footer-color);
 }
+.overlay {
+  display: inline-flex;
+  height: 600px;
+  width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(/images/hw4/effect1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-color: #c4c4c4;
+}
 .hero {
   padding-bottom: 94px;
   padding-top: 32px;
@@ -245,10 +261,23 @@ img {
   background-color: var(--link-color);
   color: var(--text-color-accent);
 }
+.hero-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -30px;
+  margin-bottom: -30px;
+}
+
+.hero-list-item {
+  margin-right: 30px;
+  margin-bottom: 30px;
+  flex-basis: calc(100% / 4-30);
+}
 
 .hero-list-item-title {
-  width: 270px;
+  /* width: 270px;*/
   margin-bottom: 10px;
+  margin-top: 30px;
   font-family: var(--text-font);
   font-weight: 700;
   font-size: 14px;
@@ -281,6 +310,28 @@ img {
 
 .hero-list {
   display: flex;
+}
+.hero-list-item::before {
+  content: "";
+  display: block;
+  height: 120px;
+  background: #f5f4fa;
+  border-radius: 4px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.icon-antenna::before {
+  background-image: url(/images/hw4/antenna\ 1.png);
+}
+.icon-clock::before {
+  background-image: url(/images/hw4/clock\ 1.png);
+}
+.icon-diagram::before {
+  background-image: url(/images/hw4/diagram\ 1.png);
+}
+.icon-astronaut::before {
+  background-image: url(/images/hw4/astronaut\ 1.png);
 }
 /*=============End Hero Index=============*/
 
