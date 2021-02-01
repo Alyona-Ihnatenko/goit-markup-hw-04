@@ -492,7 +492,7 @@ img {
   justify-content: center;
 }
 .our-client-list {
-  display: inline-flex;
+  display: flex;
 }
 .our-clients-item {
   display: flex;
@@ -502,21 +502,23 @@ img {
   border: solid 1px var(--accent-color);
 }
 .our-client-link {
-  justify-content: space-between;
   color: var(--accent-color);
   text-align: center;
+  display: flex;
   justify-content: center;
-  display: block;
   align-items: center;
+  width: 100%;
+  height: 100%;
 }
 .our-clients-icon {
-  /* width: 170px;
-  height: 90px;*/
+  display: flex;
+  width: 170px;
+  height: 90px;
   fill: var(--accent-color);
 }
-.our-clients-icon: {
-  width: 45px;
-  height: 50px;
+.our-clients-icon {
+  align-items: center;
+  justify-content: center;
 }
 .our-clients-title {
   margin-bottom: 50px;
