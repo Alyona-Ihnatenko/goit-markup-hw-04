@@ -328,13 +328,13 @@ img {
   background-image: url(../images/hw4/antenna.png);
 }
 .icon-clock::before {
-  background-image: url(../images/hw4/clock.png);
+  background-image: url(../images/hw4/clock\ 1.png);
 }
 .icon-diagram::before {
-  background-image: url(../images/hw4/diagram.png);
+  background-image: url(../images/hw4/diagram\ 1.png);
 }
 .icon-astronaut::before {
-  background-image: url(../images/hw4/astronaut.png);
+  background-image: url(../images/hw4/envelope\ \(hover\).svg);
 }
 /*=============End Hero Index=============*/
 
