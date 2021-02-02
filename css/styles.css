@@ -489,24 +489,27 @@ img {
   display: flex;
   text-align: center;
   display: inline-block;
-  justify-content: center;
 }
 .our-client-list {
   display: flex;
 }
 .our-clients-item {
-  display: flex;
-  width: 170px;
-  height: 90px;
   background-color: var(--background-color);
   border: solid 1px var(--accent-color);
+  display: inline-block;
+  display: flex;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center; 
+width: 170px;
+height: 90px;
 }
-.our-client-link {
+.our-clients-link {
   color: var(--accent-color);
-  text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   width: 100%;
   height: 100%;
 }
@@ -515,10 +518,9 @@ img {
   width: 170px;
   height: 90px;
   fill: var(--accent-color);
-}
-.our-clients-icon {
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 .our-clients-title {
   margin-bottom: 50px;
