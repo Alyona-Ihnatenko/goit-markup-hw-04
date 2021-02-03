@@ -171,7 +171,7 @@ img {
   background-image: url(../images/hw4/smartphone.svg);
 }
 .tel-link:hover > svg,
-.tel-link:focus>svg{
+.tel-link:focus> svg{
 fill: var(--link-color);
 }
 .mail-link::before{
@@ -183,6 +183,10 @@ fill: var(--link-color);
   background-image: url(../images/hw4/envelope\ \(hover\).svg);
   fill: var(--accent-color);
 } 
+.mail-link::before:hover,
+.tel-link::before:focus{
+  fill: var(--link-color);
+}
 
 /*============End Navigation=======*/
 
@@ -215,11 +219,31 @@ fill: var(--link-color);
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
+.footer-title{
+  color: var(--background-color);
+  margin-bottom: 30px;
+}
+.footer-icons{
+  margin-left: 70px;
+  padding-top: 76px;
+  padding-bottom: 96px;
+  width: 206px;
+}
+.icon-link .dark-them{
+  color: var(--background-color);
+}
+.icon-list-item .dark-them{
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.icon-img .dark-them{
+  fill: currentColor;
+}
 
 /*==============End footer==========*/
 
 /*=============Hero Index===========*/
-.hero .container {
+.hero {
   display: flex;
   justify-content: center;
 }
@@ -234,6 +258,8 @@ fill: var(--link-color);
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--text-color-accent);
+  margin-left: auto;
+  margin-right: auto;
 }
 .hero {
   background-color: var(--header-footer-color);
@@ -241,7 +267,7 @@ fill: var(--link-color);
 .overlay {
   display: inline-flex;
   height: 600px;
-  min-width: 1600px;
+  max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
   background-image: linear-gradient(
@@ -250,7 +276,7 @@ fill: var(--link-color);
       rgba(47, 48, 58, 0.4)
     ),
     url(../images/hw4/effect1.jpg);
-  background-size: contain;
+  background-size: cover;
   background-position: center;
   background-color: #c4c4c4;
 }
@@ -260,6 +286,7 @@ fill: var(--link-color);
 }
 .hero-above-side {
   text-align: center;
+  width: 1600px;
   /* padding-bottom: 200px;
   padding-top: 200px;*/
 }
@@ -340,6 +367,7 @@ fill: var(--link-color);
   content: "";
   display: block;
   height: 120px;
+  width: 270px;
   background: #f5f4fa;
   border-radius: 4px;
   background-repeat: no-repeat;
@@ -348,9 +376,11 @@ fill: var(--link-color);
 }
 .icon-antenna::before {
   background-image: url(../images/hw4/antenna.png);
+  
 }
+
 .icon-clock::before {
-  background-image: url(../images/hw4/clock\ 1.png);
+  background-image:url(../images/hw4/clock\ 1.png);
 }
 .icon-diagram::before {
   background-image: url(../images/hw4/diagram\ 1.png);
@@ -358,6 +388,7 @@ fill: var(--link-color);
 .icon-astronaut::before {
   background-image: url(../images/hw4/astronaut\ 1.png);
 }
+
 /*=============End Hero Index=============*/
 
 /*==============About-us,Our-team==========*/
