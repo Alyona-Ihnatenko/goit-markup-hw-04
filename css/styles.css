@@ -267,7 +267,7 @@ fill: var(--link-color);
 .overlay {
   display: inline-flex;
   height: 600px;
-  max-width: 1600px;
+  min-width: 1600px;
   margin-left: auto;
   margin-right: auto;
   background-image: linear-gradient(
@@ -276,7 +276,7 @@ fill: var(--link-color);
       rgba(47, 48, 58, 0.4)
     ),
     url(../images/hw4/effect1.jpg);
-  background-size: cover;
+  background-size: contain;
   background-position: center;
   background-color: #c4c4c4;
 }
