@@ -169,6 +169,7 @@ img {
   height: 16px;
   margin-right: 10px;
   background-image: url(../images/hw4/smartphone.svg);
+  fill: var(--accent-color);
 }
 .tel-link:hover > svg,
 .tel-link:focus> svg{
@@ -236,8 +237,8 @@ fill: var(--link-color);
   background-color: rgba(255, 255, 255, 0.1);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-.icon-img .dark-them{
-  fill: currentColor;
+.icon-list-item .dark-them-1{
+  fill:var(--background-color);
 }
 
 /*==============End footer==========*/
@@ -373,7 +374,7 @@ fill: var(--link-color);
   border-radius: 4px;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
+  background-size: 70px;
 }
 .icon-antenna::before {
   background-image: url(../images/hw4/antenna.png);
@@ -551,7 +552,7 @@ fill: var(--link-color);
  margin-right: -30px;
 }
 .our-clients-item {
-
+    border-radius: 4px;
   border: solid 1px var(--accent-color);
   display: inline-block;
   display: flex;
@@ -707,6 +708,9 @@ fill: var(--link-color);
   margin-right: 30px;
   margin-bottom: 30px;
   flex-basis: calc(100% / 3-30);
+  background: var(--background-color);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
+
 
 /*===========End Projects===========*/
