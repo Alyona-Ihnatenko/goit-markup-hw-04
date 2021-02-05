@@ -448,7 +448,6 @@ fill: var(--link-color);
 }
 .our-team-list-item-img {
   width: 270px;
-  margin-bottom: 30px;
 }
 .our-team-list-item-title {
   font-family: var(--text-font);
