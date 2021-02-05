@@ -162,31 +162,23 @@ img {
 .tel-link:focus {
   color: var(--link-color);
 }
-.tel-link::before{
-  display: inline-block;
-  content: "";
-  width: 10px;
-  height: 16px;
-  margin-right: 10px;
-  background-image: url(../images/hw4/smartphone.svg);
-  fill: var(--accent-color);
-}
-.tel-link:hover > svg,
-.tel-link:focus> svg{
+
+.auth-nav-item:hover > svg,
+.auth-nav-item:focus> svg{
 fill: var(--link-color);
 }
-.mail-link::before{
-  display: inline-block;
-  content: "";
+.contacts-icon{
+  fill: var(--accent-color);
   width: 16px;
   height: 12px;
   margin-right: 10px;
-  background-image: url(../images/hw4/envelope\ \(hover\).svg);
-  fill: var(--accent-color);
-} 
-.mail-link::before:hover,
-.tel-link::before:focus{
-  fill: var(--link-color);
+}
+
+.auth-nav-item{
+  display: flex;
+}
+.auth-nav-list{
+  display:flex;
 }
 
 /*============End Navigation=======*/
@@ -278,7 +270,7 @@ fill: var(--link-color);
       rgba(47, 48, 58, 0.4)
     ),
     url(../images/hw4/effect1.jpg);
-  background-size: contain;
+  background-size: cover;
   background-position: center;
   background-color: #c4c4c4;
 }
@@ -442,6 +434,7 @@ fill: var(--link-color);
 }
 .our-team-list {
   display: flex;
+  margin-left:-30px ;
 }
 .our-team-list-item {
   margin-left: 30px;
@@ -709,8 +702,10 @@ fill: var(--link-color);
   margin-bottom: 30px;
   flex-basis: calc(100% / 3-30);
   background: var(--background-color);
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
+.projects-list-item:hover{
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 
+}
 
 /*===========End Projects===========*/
