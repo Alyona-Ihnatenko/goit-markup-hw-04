@@ -545,13 +545,12 @@ fill: var(--link-color);
  margin-right: -30px;
 }
 .our-clients-item {
-    border-radius: 4px;
-  border: solid 1px var(--accent-color);
+   
   display: inline-block;
   display: flex;
   text-decoration: none;
   margin-right: 30px;
-  flex-basis:calc(100%/6-150) ;
+  flex-basis:calc(100%/6-30) ;
   width: 170px;
   height: 90px;
 }
@@ -565,6 +564,7 @@ fill: var(--link-color);
   width: 100%;
   height: 100%;
   border: solid 1px var(--accent-color);
+  border-radius: 4px;
 }
 .our-clients-icon {
   display: flex;
@@ -623,13 +623,14 @@ fill: var(--link-color);
   margin-right: auto;*/
   padding: 6.1px 22.5px;
   border-color: #f5f4fa;
-  /* box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);*/
+  border-radius: 4px;
+   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .buttons-list-item {
   /*box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);*/
-  border-radius: 4px;
+
 }
 
 .buttons-list-item-btn {
