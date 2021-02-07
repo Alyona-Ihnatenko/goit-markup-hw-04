@@ -59,6 +59,7 @@ img {
 }
 .header .container {
   display: flex;
+  border-bottom: 1px solid #ECECEC;
 }
 /*==========Logotype========*/
 .logo-link {
@@ -97,9 +98,9 @@ img {
   margin-left: auto;
 }
 .tel-link,
-.mail-link:not(:last-child) {
+/*.mail-link:not(:last-child) {
   margin-right: 50px;
-}
+}*/
 .navigation {
   display: flex;
 }
@@ -161,7 +162,9 @@ img {
 .tel-link:focus {
   color: var(--link-color);
 }
-
+.auth-nav-item:not(:last-child) {
+  margin-right: 50px;
+}
 .auth-nav-item:hover > svg,
 .auth-nav-item:focus> svg{
 fill: var(--link-color);
@@ -187,10 +190,12 @@ fill: var(--link-color);
 /*===========Footer==============*/
 .footer .container {
   display: flex;
+  align-items: baseline;
 }
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
+  align-items: baseline;
 }
 
 .address-list-item:not(:last-child) {
@@ -213,6 +218,12 @@ fill: var(--link-color);
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
+.address-list-item-link-tel:hover,
+.address-list-item-link-mail:hover,
+.address-list-item-link-tel:focus,
+.address-list-item-link-mail:focus{
+  color: var(--link-color);
+}
 .footer-title{
   color: var(--background-color);
   margin-bottom: 20px;
@@ -220,9 +231,7 @@ fill: var(--link-color);
 }
 .footer-icons{
   margin-left: 70px;
-  margin-top: auto;
-  margin-bottom: auto;
-  width: 206px;
+   width: 206px;
 
 }
 .icon-link .dark-them{
@@ -505,7 +514,7 @@ fill: var(--link-color);
   width: 44px;
   height: 44px;
   display: flex;
-  color: var(--accent-color);
+  color: var(--icon-color);
   text-align: center;
   justify-content: center;
   align-items: center;
@@ -555,7 +564,7 @@ fill: var(--link-color);
   height: 90px;
 }
 .our-clients-link {
-  color: var(--accent-color);
+  color: var(--icon-color);
   background-color: var(--background-color);
   display: flex;
   /*justify-content: center;
@@ -563,7 +572,7 @@ fill: var(--link-color);
   text-align: center;*/
   width: 100%;
   height: 100%;
-  border: solid 1px var(--accent-color);
+  border: solid 1px var(--icon-color);
   border-radius: 4px;
 }
 .our-clients-icon {
@@ -639,8 +648,9 @@ fill: var(--link-color);
 }
 .buttons-list-item-btn:hover,
 .buttons-list-item-btn:focus {
-  color: var(--text-color-accent);
+  color: var(--background-color);
   background-color: var(--link-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /*==========End Button======*/
