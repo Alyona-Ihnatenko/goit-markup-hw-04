@@ -1,6 +1,6 @@
 :root {
   --text-font: "roboto", sans-serif;
-  --logo-font: "relaway", sans-serif;
+  --logo-font: "raleway", sans-serif;
   --accent-color: #757575;
   --title-color: #212121;
   --header-footer-color: #2f303a;
@@ -78,6 +78,7 @@ img {
   color: var(--link-color);
   font-family: var(--logo-font);
   font-style: normal;
+  font-weight: 700;
 }
 .logo-link-dark-theme {
   color: var(--text-color-accent);
@@ -325,7 +326,6 @@ fill: var(--link-color);
 .hero-list-item {
   margin-right: 30px;
   
-  flex-basis: calc(100% / 4-30);
 }
 
 .hero-list-item-title {
